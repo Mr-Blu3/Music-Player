@@ -1,0 +1,77 @@
+.body {
+  padding:20px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.body p {
+  margin: 0;
+  text-align: center
+}
+.memCard img {
+  width: 220px;
+  height: 220px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.wrapCard
+{
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  margin: 20px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+/*
+* Flip div with css
+* */
+
+.card__front,
+.card__back {
+  position: absolute;
+}
+
+.card__front,
+.card__back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.9s;
+  transition: transform 0.9s;
+}
+
+.card__back {
+  -webkit-transform: rotateY(100deg);
+  transform: rotateY(100deg);
+}
+
+.card.effect__click.flipped .card__front {
+  -webkit-transform: rotateY(100deg);
+  transform: rotateY(100deg);
+}
+
+.card.effect__click.flipped .card__back {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+
+/*
+* Fade Remove
+**/
+
+.fadeRemove
+{
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: 1s, 0s;
+  transition-delay: 0s, 1s;
+}
+
+.fadeShow
+{
+  display: block;
+}

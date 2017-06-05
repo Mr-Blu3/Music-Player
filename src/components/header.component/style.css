@@ -1,0 +1,19 @@
+.header {
+  background: #fafafa;
+  padding:20px;
+  clear: both;
+  border-bottom:1px solid rgba(202, 202, 202, .5);
+  font-size: 12px;
+}
+.header p {
+  margin: 0 0 0 10px;
+  font-weight: bold;
+}
+
+.header .red {
+  color: red;
+}
+
+.right {
+  float: right;
+}

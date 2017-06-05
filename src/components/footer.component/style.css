@@ -1,0 +1,39 @@
+.footer {
+  text-align: center;
+  width:100%;
+  background: #fafafa;
+  height:60px;
+  border-top:1px solid rgba(202, 202, 202, .5);
+}
+
+.footer p{
+  padding:20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  float: left;
+}
+
+.footer button
+{
+  padding: 10px;
+  margin: 10px;
+  background: #fff;
+  cursor: pointer;
+  color: #000;
+  border-radius:3px;
+  border: 1px solid #ccc;
+  float: right;
+}
+
+.footer button:hover
+{
+  color: #292b2c;
+  background-color: #e6e6e6;
+}
+
+.footer button:active
+{
+  background: grey;
+  color: #fff;
+}
