@@ -76,7 +76,7 @@ export class BodyComponent extends React.Component<AppHeader.Props, AppHeader.St
 
       that.state.cards.map(data => { data.showMemBool = false; data.match = false;
         return data; });
-      let shuffel = MOCKDATA_MEM;
+      let shuffel = that.shuffleCards(MOCKDATA_MEM);
 
       that.storeCheckCard = [];
       that.setState({cards: shuffel});
