@@ -1,11 +1,9 @@
 import {combineReducers, ReducersMapObject} from 'redux';
-import memory from './memory';
-
+import app from './app';
 export interface RootState {
-  memory: ReducersMapObject;
+  app: ReducersMapObject;
 }
 
-export default combineReducers<RootState>({
-  memory: memory,
+export default combineReducers({
+  app: app
 });
-

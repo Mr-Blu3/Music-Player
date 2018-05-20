@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { Router, Route, Switch } from 'react-router';
 import { createBrowserHistory } from 'history';
 import { configureStore } from './store';
-import {AppMemoryInit} from "./containers/App-Memory/app-memory.init";
+import {AppMusicPlayerInit} from "./containers/App-Memory/app-musicPlayer.init";
 
 const store = configureStore();
 const history = createBrowserHistory();
@@ -13,7 +13,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Switch>
-        <Route path="/" component={AppMemoryInit} />
+        <Route path="/" component={AppMusicPlayerInit} />
       </Switch>
     </Router>
   </Provider>,

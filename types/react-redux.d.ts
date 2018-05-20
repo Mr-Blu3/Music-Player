@@ -1,4 +1,4 @@
-import 'react-redux';
+/*import 'react-redux';
 
 declare module 'react-redux' {
 
@@ -8,4 +8,4 @@ declare module 'react-redux' {
     mergeProps?: MergeProps<TStateProps, TDispatchProps, TOwnProps, TMergedProps>,
     options?: Options
   );
-}
+}*/

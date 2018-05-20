@@ -1,9 +1,7 @@
 /** TodoMVC model definitions **/
 
-declare interface MemoryItemData {
-  id?: number;
-  text?: string;
-  completed?: boolean;
+declare interface ModelsItemData {
+
 }
 
-declare type MemoryStoreState = MemoryItemData[];
+declare type ModelsStoreState = ModelsItemData[];
