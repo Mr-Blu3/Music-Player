@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Memory.iml" filepath="$PROJECT_DIR$/.idea/Memory.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../react-redux-typescript-boilerplate/react-redux-typescript-boilerplate.iml" filepath="$PROJECT_DIR$/../react-redux-typescript-boilerplate/react-redux-typescript-boilerplate.iml" />
     </modules>
   </component>
 </project>
