@@ -67,11 +67,44 @@
   opacity: 0;
   visibility: hidden;
   transition-property: opacity, visibility;
-  transition-duration: 1s, 0s;
-  transition-delay: 0s, 1s;
+  transition-duration: 5s, 5s;
+  transition-delay: 5s, 5s;
 }
 
 .fadeShow
 {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity, visibility;
+  transition-duration: 1s, 0s;
+  transition-delay: 0s, 0s;
 }
+
+#playList {
+  text-align: center;
+}
+
+.wrap_song {
+ display: inline-block;
+  width: 23%;
+  margin: 0 1% 0 1%;
+  position: relative;
+}
+
+.wrap_song .song {
+  width: 100%;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.play, .pause {
+  width: 25%;
+  position: absolute;
+  bottom: 120px;
+  right: 100px;
+  cursor: pointer;
+}
+
