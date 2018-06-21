@@ -37,7 +37,7 @@ export class AppMusicPlayerInit extends React.Component<AppMusicPlayer.Props, Ap
   {
     let sArtist = 'q='+ val + '&type=artist';
     let sFetchUrl = 'https://api.spotify.com/v1/search?' + sArtist + '&type=artist&limit=1';
-    let sTokenAuth = 'BQAi1Vwq1M_Qn0V8Qt1sminkGlDUOdQizxLedsSgWyihmZvH6ljOuInlONBKSOaDH6wUpdk0y0d-5izPIOqgByBQZAE88RuWiTIBXNnjmGwc_EZthBDNG54MHA94jHww8Oz4w6IgThwaISciiqGnKX1Gbwyr8g&refresh_token=AQAz0QIf7AVKCdIAtGgxpQ0wThYht5c543u7kbCkZOg1iPZIpC4OkmzFkuORq8pRohpBB8fTDp-ZvMVLZUXV6PhmEIbfVSAagBKls6M2M0xKl2uaMyYSOKuZxni28pc6F6w';
+    let sTokenAuth = 'BQBXaHvfPoAphP9cEu3i8JSjlSbNmH8jq-21YEks5754hOVJjK78NNi5NALcKKSiT6pQzuiceTJ9yC3M_KqPX14Thvy4t2964S02xp0Ojb-p9cTrD5ZnDMAjQ1PUElja_6OZXa20vCzHQyJzyzHR5_WHdH2YHA';
     let ALBUM_URL = 'https://api.spotify.com/v1/artists/';
     let myOptions : RequestInit  = {
       method: 'GET',
