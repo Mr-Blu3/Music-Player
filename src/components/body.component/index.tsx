@@ -12,6 +12,7 @@ export class BodyComponent extends React.Component<AppHeader.Props, AppHeader.St
   constructor(props)
   {
     super(props);
+    console.log(this.props.getGallery[0].name)
     this.state = {
       playingUrl: '',
       audio: null,
@@ -45,20 +46,26 @@ export class BodyComponent extends React.Component<AppHeader.Props, AppHeader.St
   render() {
     return (
       <div>
-        //ToDO: Take out profile of artist and style it
-        <div id={"profile"}>
-          {this.props.getGallery[0].name}
-          {this.props.getGallery[0].images.map(data => data.url)}
+        <div className={style.profile}>
+          <div>
+            <img className={style.galler_} src={this.props.getGallery[0].images[0].url} />
+          </div>
+          <div>
+            <label> Name: {this.props.getGallery[0].name}</label><br />
+            <label> Followers: { this.props.getGallery[0].followers.total }</label><br />
+            <label> Genres: { this.props.getGallery[0].genres[0] }</label><br />
+            <label> Popularity: { this.props.getGallery[0].popularity }</label>
+          </div>
         </div>
-
-        <div id={'playList'}>
+        <hr />
+        <div className={style.playList}>
+          <h2>Top Rated Tracks</h2>
           {this.props.getPlayList.tracks.map((data, k) => {
               if(k > 0) {
               return (
                 <div className={style.wrap_song} key={k}>
                   <div onClick={() =>  this.playMusic(data.preview_url)}>
                     <img className={style.song} src={data.album.images[0].url} /><br />
-
 
                     <img
                       className={style.playPause + ' ' + (this.state.playingUrl === data.preview_url && this.state.playing ? style.fadeShow : style.fadeRemove)}

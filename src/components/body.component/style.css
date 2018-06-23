@@ -47,7 +47,7 @@
 .wrap_song {
  display: inline-block;
   width: 23%;
-  margin: 0 1% 0 1%;
+  margin: 1%;
   position: relative;
 }
 
@@ -62,4 +62,37 @@
   bottom: 120px;
   right: 100px;
   cursor: pointer;
+}
+
+
+#playList {
+  text-align: left;
+  margin: 20px;
+
+}
+.playList h2 {
+  text-align: center;
+}
+.profile label {
+  text-align: center;
+  font-weight: bold;
+  vertical-align: top;
+  line-height: 50px;
+}
+
+.galler_ {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #fafafa;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.profile{text-align: center}
+
+.profile div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px;
+  text-align: left;
 }

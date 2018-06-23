@@ -14,6 +14,23 @@
   color: red;
 }
 
+.header  input {
+  width: 90%;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.header .btn{
+  width: 3%;
+  margin: 0 5px;
+  background: #CACACA;
+  border: 1px solid ;
+  cursor: pointer;
+}
+.header .btn:hover {
+  background: #9E9E9E;
+}
+
 .right {
   float: right;
 }

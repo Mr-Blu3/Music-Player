@@ -25,6 +25,12 @@ export class HeaderComponent extends React.Component<AppHeader.Props, AppHeader.
     }
   }
 
+  getInitialState(){
+    return {
+      text: ''
+    };
+  }
+
   submitHandler(evt) {
     evt.preventDefault();
     this.props.onUpdate(this.state.fieldVal);
@@ -46,13 +52,13 @@ export class HeaderComponent extends React.Component<AppHeader.Props, AppHeader.
           <div className={style.header}>
           <p>Spotify Music Player</p>
             <form onSubmit={this.submitHandler}>
-            <input
-               type="text"
+            <input ref="input"
+              type="text"
                placeholder="type here"
                value={this.state.fieldVal}
                onChange={this.update}
               />
-              <input type="submit" />
+              <input className={style.btn} type="submit" value={"Go"}/>
             </form>
           </div>
         );
